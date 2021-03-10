@@ -1,3 +1,5 @@
 ## Moment of Nomad
 
-test
+Chrome Extention App for Nomad coder in all of the world
+
+Only banila javascript
