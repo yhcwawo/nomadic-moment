@@ -13,7 +13,7 @@ function saveName(text){
 function paintGreeting(text){
     form.classList.remove(SHOWING_ON);
     greeting.classList.add(SHOWING_ON);
-    greeting.innerText = `Hello ${text}`;
+    greeting.innerText = `Moment for nomad coder ${text}`;
 
 }
 
