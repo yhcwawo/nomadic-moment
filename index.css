@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  html, body {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+  }
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-width: 1000px;
+  }
+
+  .form {
+      display: none;
+  }
+  .greeting{
+      display: none;
+  }
+
+  .showing{
+      display: block;
+  }
+
+  .light .clock-frame { 
+    position: relative; 
+    background: #f8f8f8;
+    border: 5px solid #181818;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.45) inset;
+  }
+  .light .graduations {
+    background: #666;
+  }
+  .light .hour-number {
+    color: #181818;
+  }
+  .light .minutes,
+  .light .hours {
+    background: #181818;
+  }
+  .dark .clock-frame {
+    position: relative; 
+    background: #181818;
+    border: 5px solid #181818;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.55) inset;
+  }
+  .dark .graduations {
+    background: #aaa;
+  }
+  .dark .hour-number {
+    color: #f2f2f2;
+  }
+  .dark .minutes,
+  .dark .hours {
+    background: #eee;
+  }
+  .light .clock-frame::before,
+  .dark .clock-frame::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: #ccc;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 2px 4px -1px black;
+    z-index: 10;
+  }
