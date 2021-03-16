@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+<title>Nomadic Moment</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="index.css" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+
+<body>
+<div id="container">
+
+<div id="header">
+  <h1>icon</h1>
+</div>
+
+  <div id="wrapper">
+
+    <div id="content">
+
+
+      <h1 class="Title">
+        <span>N</span><span>o</span><span>m</span><span>a</span><span>d&nbsp;</span><span class="js-greeting greeting" style='display:inline'></span>
+      </h1>
+
+      <form class="js-form form">
+          <input type="text" id="input" class="form-control" placeholder="Please Enter your name, e.g. Nicholas">
+      </form>
+
+      <form action="https://www.google.com/search" method="GET">
+        <div class="mx-auto mt-5 search-bar input-group mb-3" style="width: 600px;">
+          <input name="q" type="text" class="form-control rounded-pill" placeholder="Let's Googling!" aria-label="Recipient's username" aria-describedby="button-addon2">
+    
+        </div>
+      </form>
+
+      <br><br><br>
+      <div class="js-clock">
+      </div>
+
+      <!-- Content class -->
+    </div>
+  </div>
+
+
+  <div id="navigation">
+
+    <br><br><br><br>
+    <p><strong>⛅Today's Weather Diary</strong></p>
+    <div class="js-bg" ></div><p class="js-weather"></p>
+
+    <p><strong>📚ToDo List</strong></p>
+    <form class="js-toDoForm">
+
+      <div class="Input">
+        <input type="text" id="input" class="Input-text" placeholder="Please enter your tasks">
+        <label for="input" class="Input-label">Enter your task</label>
+      </div>
+
+    </form>
+    <ul class="js-pendingList">
+      
+    </ul>
+
+    <!-- navigation class -->
+  </div>
+
+
+  <div id="extra">
+    <br><br><br><br><br>
+    <p><strong>&nbsp&nbsp&nbsp&nbsp&nbsp 🎶The songs I listen to when I code</strong></p>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<div id="player"></div>
+
+    <br><br>
+    <p><strong>&nbsp&nbsp&nbsp&nbsp&nbsp ✔Finished List</strong></p>
+    <ul class="js-finishedList">
+    </ul>
+
+    <!-- extra class -->
+  </div>
+
+
+  <div id="footer">
+    <p>Developer nomadHc</p>
+  </div>
+
+<!-- final container -->
+</div>
+
+
+<script src="greeting.js"></script>
+<script src="clock.js"></script>  
+<script src="bg.js"></script>
+<script src="weather.js"></script>
+<script src="todo.js"></script>
+<script src="https://www.youtube.com/player_api"></script>
+<script type="text/javascript">      
+  let player;
+  const MUSIC_NUMBER = 2;
+  
+  function genRandom(){
+  const number = Math.floor(Math.random() * MUSIC_NUMBER);
+  return number;
+  }
+
+  function genMusic(){
+    const randomNumber = genRandom();
+    let musicName = "";
+    if(randomNumber == 1){
+      musicName = 'Jrdd-Nyg048';
+    } else {
+      musicName = 'nxKfi-6EtmY';
+    }
+    return musicName;
+  }
+
+  function onYouTubePlayerAPIReady(){
+    player = new YT.Player("player",{
+      width: "75%",
+      height: "280",
+      videoId: genMusic(),
+    });
+  }
+</script>
+
+</body>
+</html>
