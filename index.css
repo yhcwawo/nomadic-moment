@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Dosis');
 @import url('https://fonts.googleapis.com/css?family=Audiowide');
-
+@import url('https://fonts.googleapis.com/css2?family=Chango&display=swap');
 
 :root {
   /* generic */
@@ -12,7 +12,7 @@
   --colorPrimary400: #7e57c2;
   --colorPrimary600: #5e35b1;
   --colorPrimary800: #4527a0;
-  --fontFamily: "Dosis", sans-serif;
+  --fontFamily: "Audiowide", sans-serif;
   --fontSizeSm: 1.2rem;
   --fontSizeMd: 1.6rem;
   --fontSizeLg: 2.1rem;
@@ -53,6 +53,29 @@ body{
     font: 100% arial,sans-serif
 }
 
+ul li {
+  font-family: 'Chango', cursive;
+  font-size: 25px;
+  margin: 5px;
+}
+
+button {
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  border-radius: 15px;
+}
+
+button:hover {background-color: #3e8e41}
+
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
 
 .Title{
     font-size: 90px;
@@ -96,13 +119,13 @@ h1 {
     padding: var(--inputPaddingV) var(--inputPaddingH);
     color: inherit;
     width: 85%;
-    height: 20%;
+    height: 27%;
     font-family: "Dosis";
     font-size: var(--inputFontSize)a;
     font-weight: inherit;
     line-height: var(--inputLineHeight);
     border: none;
-    border-radius: 0.5rem;
+    border-radius: 0.4rem;
     transition: box-shadow var(--trnsitionDuration);
     text-align: left;
   }
@@ -122,7 +145,7 @@ h1 {
     bottom: 30.5%;
     left: 27rem;
     color:rgb(20, 211, 45);
-    font-family: "Dosis";
+    font-family: "Audiowide";
     font-size: var(--inputFontSize);
     font-weight: inherit;
     line-height: var(--inputLineHeight);
