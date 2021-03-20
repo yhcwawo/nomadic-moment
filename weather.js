@@ -19,11 +19,15 @@ function getWeather(lat, lon){
         const description = json.weather[0]['description'];
         const place =json.name;
 
-        weather.innerText = `Today ${place} was ${description} 
-                        Temperature is ${temperature}℃ & Minimum ${temp_min}℃
-                Pressure  ${pressure}p & Humidity  ${humidity}p`;
+        weather.innerText = `Today ${place} is ${main}
+                        Detail : ${description} 
+                        Temperature : ${temperature}℃  
+                        Minimum : ${temp_min}℃
+                        Maximum : ${temp_max}℃
+                        Pressure : ${pressure}p 
+                        Humidity : ${humidity}p`;
     });
-    unit
+ 
 }
 
 function saveCoords(coordsObj){

@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Dosis');
+@import url('https://fonts.googleapis.com/css?family=Audiowide');
+
 
 :root {
   /* generic */
@@ -51,42 +53,22 @@ body{
     font: 100% arial,sans-serif
 }
 
-h1 {
-    
-    margin-top: 230px;
-    font-size: 90px;
-  }
-  h1 span:nth-child(1) {
-      color:#4285f4;
-  }
-  h1 span:nth-child(2) {
-      color:#ea4335;
-  }
-  h1 span:nth-child(3) {
-      color:#fbbc05;
-  }
-  h1 span:nth-child(4) {
-      color:#4285f4;
-  }
-  h1 span:nth-child(5) {
-      color:#34a853;
-  }
-  h1 span:nth-child(6) {
-      color:rgb(65, 58, 58);
-  }
 
 .Title{
     font-size: 90px;
 }
 
+.js-weather{
+  font-size: 22px;
+  font-family: "Audiowide";
+}
+
 /* greeting part */
 .form {
     display: none;
-    width: 450px;
+    width: 400px;
     margin: auto;
-    position: absolute;
-    top: 17%;
-    left: 37.5%;
+    position: relative;
 
 }
 .greeting{
@@ -98,10 +80,13 @@ h1 {
 }
 
 .js-bg{
-    width: 450px;
-    height: 250px;
-    overflow: hidden;
-    float: left;  
+  position: relative;
+  top: 50%;
+  left: -3%;
+
+}
+h1 {
+  font-family: "Audiowide";
 }
 
 
@@ -112,14 +97,14 @@ h1 {
     color: inherit;
     width: 85%;
     height: 20%;
-    font-family: inherit;
+    font-family: "Dosis";
     font-size: var(--inputFontSize)a;
     font-weight: inherit;
     line-height: var(--inputLineHeight);
     border: none;
-    border-radius: 0.4rem;
+    border-radius: 0.5rem;
     transition: box-shadow var(--trnsitionDuration);
-    text-align: center;
+    text-align: left;
   }
   
   .Input-text::placeholder {
@@ -133,11 +118,11 @@ h1 {
   
   .Input-label {
     display: block;
-    position: absolute;
+    position: relative;
     bottom: 30.5%;
     left: 27rem;
     color:rgb(20, 211, 45);
-    font-family: inherit;
+    font-family: "Dosis";
     font-size: var(--inputFontSize);
     font-weight: inherit;
     line-height: var(--inputLineHeight);
@@ -172,58 +157,6 @@ h1 {
       z-index 0ms;
   }
 
-/* Analog Clock CSS */
-  .light .clock-frame { 
-    position: absolute; 
-    top: 50%;
-    left: 27.4%;
-    background: #f8f8f8;
-    border: 5px solid #181818;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.45) inset;
-  }
-  .light .graduations {
-    background: #666;
-  }
-  .light .hour-number {
-    color: #181818;
-  }
-  .light .minutes,
-  .light .hours {
-    background: #181818;
-  }
-  .dark .clock-frame {
-    position: absolute; 
-    top: 50%;
-    left: 27.4%;
-    background: #181818;
-    border: 5px solid #181818;
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.55) inset;
-  }
-  .dark .graduations {
-    background: #aaa;
-  }
-  .dark .hour-number {
-    color: #f2f2f2;
-  }
-  .dark .minutes,
-  .dark .hours {
-    background: #eee;
-  }
-  .light .clock-frame::before,
-  .dark .clock-frame::before {
-    content: "";
-    width: 20px;
-    height: 20px;
-    background: #ccc;
-    border-radius: 50%;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    box-shadow: 0 2px 4px -1px black;
-    z-index: 10;
-  }
-
 
 /* Base Frame CSS */
 p{
@@ -234,6 +167,7 @@ a{
     padding:5px;
     text-decoration:none;
     color:#000000;
+    margin-right: 2px;
 }
 
 div#header{
@@ -245,6 +179,7 @@ div#header h1{
     line-height:60px;
     margin:0;
     padding-left:8px;
+    text-align: right;
     
 }
 
@@ -276,7 +211,7 @@ div#footer p{
 div#wrapper{
     float:left;
     width:100%;
-    height: 90vh;
+    height: 88vh;
 }
 
 div#content{
@@ -291,8 +226,8 @@ div#navigation{
 
 div#extra{
     float:left;
-    width:25%;
-    margin-left:-25%;
+    width:20%;
+    margin-left:-20%;
 }
 
 div#footer{

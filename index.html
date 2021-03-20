@@ -14,12 +14,17 @@
 
 <div id="header">
   <h1>
-    <i class="fas fa-cloud-sun"></i>
-    <i class="fas fa-cloud-sun"></i>
-    <i class="fas fa-cloud-sun"></i>
-
-
+    <form class="js-form form" style="float: left;">
+      <input type="text" id="input" class="form-control" placeholder="Please Enter your name, e.g. Nicholas">
+    </form>
+    <p class="js-greeting" style="float: right;"></p>
+    <a href="https://mail.google.com" ><i class="far fa-envelope"></i></a>
+    <a href="https://nomadcoders.co/dashboard" style="color:orange;"><i class="fas fa-photo-video"></i></a>
+    
   </h1>
+
+
+
 
 </div>
 
@@ -28,23 +33,26 @@
     <div id="content">
 
 
-      <h1 class="Title">
-        <span>N</span><span>o</span><span>m</span><span>a</span><span>d&nbsp;</span><span class="js-greeting greeting" style='display:inline'></span>
-      </h1>
-
-      <form class="js-form form">
-          <input type="text" id="input" class="form-control" placeholder="Please Enter your name, e.g. Nicholas">
-      </form>
+      <div class="js-bg" ></div>
 
       <form action="https://www.google.com/search" method="GET">
         <div class="mx-auto mt-5 search-bar input-group mb-3" style="width: 600px;">
-          <input name="q" type="text" class="form-control rounded-pill" placeholder="Let's Googling!" aria-label="Recipient's username" aria-describedby="button-addon2">
+          <input name="q" type="text" class="form-control rounded-pill" placeholder="🔍 Let's Googling!                                                                                                🎙" 
+          aria-label="Recipient's username" aria-describedby="button-addon2">
     
         </div>
       </form>
 
-      <br><br><br>
-      <div class="js-clock">
+      <br>
+      <div>
+        <a href="https://github.com/yhcwawo" style="color:black;"><i class="fab fa-github" style="font-size: 50px; margin-left: 30px; margin-right: 30px;"></i></a>
+        <a href="https://www.google.co.kr" style="color:blue;"><i class="fab fa-google" style="font-size: 50px; margin-left: 30px; margin-right: 30px;"></i></a>
+        <a href="https://www.youtube.com/" style="color:red;"><i class="fab fa-youtube" style="font-size: 50px; margin-left: 30px; margin-right: 30px;"></i></a>
+        <a href="https://stackoverflow.com/" style="color:orange;"><i class="fab fa-stack-overflow" style="font-size: 50px; margin-left: 30px; margin-right: 30px;"></i></a>
+      </div>
+
+      <div class="js-clock" style="margin-top: 80px">
+        <h1 style="font-size: 60px; "></h1>
       </div>
 
       <!-- Content class -->
@@ -54,11 +62,13 @@
 
   <div id="navigation">
 
-    <br><br><br><br>
+    <br><br><br><br><br>
     
-    <p><strong><i class="fas fa-cloud-sun"></i>Today's Weather Diary</strong></p>
-    <div class="js-bg" ></div><p class="js-weather"></p>
+    <p><strong>🎶The songs I listen to when I code</strong></p>
+    &nbsp&nbsp<div id="player"></div>
 
+    <br>
+    <br>
     <p><strong>📚ToDo List</strong></p>
     <form class="js-toDoForm">
 
@@ -70,7 +80,6 @@
     </form>
 
     <ul class="js-pendingList">
-
     </ul>
 
     <!-- navigation class -->
@@ -79,11 +88,11 @@
 
   <div id="extra">
     <br><br><br><br><br>
-    <p><strong>&nbsp&nbsp&nbsp&nbsp&nbsp 🎶The songs I listen to when I code</strong></p>
-    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<div id="player"></div>
+    <p><strong><i class="fas fa-cloud-sun" style="color:yellowgreen;"></i>Today's Weather</strong></p>
+    <p class="js-weather"></p>
 
     <br><br>
-    <p><strong>&nbsp&nbsp&nbsp&nbsp&nbsp ✔Finished List</strong></p>
+    <p><strong>✔Finished List</strong></p>
     <ul class="js-finishedList">
     </ul>
 
@@ -91,8 +100,9 @@
   </div>
 
 
+
+
   <div id="footer">
-    <p>Developer nomadHc</p>
   </div>
 
 <!-- final container -->

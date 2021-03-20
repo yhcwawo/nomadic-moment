@@ -1,6 +1,6 @@
 const body = document.querySelector(".js-bg");
 
-const IMG_NUMBER = 5;
+const IMG_NUMBER = 10;
 
 function paintImage(imgNumber){
     const image = new Image();
