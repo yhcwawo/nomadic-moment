@@ -4,7 +4,7 @@ const IMG_NUMBER = 5;
 
 function paintImage(imgNumber){
     const image = new Image();
-    image.src = `/Document/momentOfNomad/images/${imgNumber + 1}.gif`;
+    image.src = `./images/${imgNumber + 1}.gif`;
     image.classList.add("bgImage");
     body.appendChild(image);
 }
