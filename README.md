@@ -1,3 +1,4 @@
+![Soft](https://capsule-render.vercel.app/api?type=Soft&height=150&text=Nomadic%_Moment!&color=gradient&fontSize=70&animation=twinkling)
 ## Nomadic Moment
 
 Chrome Extention App for Nomad coder in all of the world.
